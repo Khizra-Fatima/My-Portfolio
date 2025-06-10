@@ -160,7 +160,7 @@ img {
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: darken($secondary-color, 10%);
+        background-color: #e5533f;
       }
     }
   }
@@ -193,7 +193,7 @@ img {
     p {
       margin-top: 1rem;
       line-height: 1.6;
-      color: #cfcfcf;
+      color: $text-color;
     }
 
     .btn {
@@ -279,17 +279,28 @@ img {
     }
   }
 
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
 
-  .btn-primary {
+  .btn-primary,
+  .btn-livedemo {
     background-color: $secondary-color;
     border: none;
 
     &:hover {
       background-color: darken($secondary-color, 10%);
+    }
+  }
+
+  .btn-livedemo {
+    background-color: $primary-color;
+    color: white;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
     }
   }
 
@@ -309,10 +320,11 @@ img {
 
     p {
       font-size: 16px;
-      color: #666;
+      color: gray;
     }
 
-    .github-link {
+    .github-link,
+    .livedemo-link {
       margin-top: 20px;
       display: inline-block;
       background-color: $secondary-color;
@@ -325,11 +337,58 @@ img {
         background-color: darken($secondary-color, 10%);
       }
     }
+
+    .livedemo-link {
+      background-color: $primary-color;
+      color: white;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
   }
 
   .show-detail {
     display: block;
+
     /* To show detail when clicked */
+    h5 {
+      color: #181818;
+    }
+
+    ul {
+      li {
+        list-style: disc;
+      }
+    }
+
+    .feature-title {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .feature-section ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .project-features {
+      color: #2b2a2a;
+    }
+
+    .project-techstack {
+      color: #2b2a2a;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 1em;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $primary-color;
+    }
   }
 
   @media (max-width: 992px) {
@@ -445,9 +504,12 @@ img {
 }
 
 .psql-img,
-.linux-img,
-.api-img {
+.linux-img {
   width: 55px;
+}
+
+.api-img {
+  width: 95px;
 }
 
 .bootstrap-img {
@@ -690,7 +752,7 @@ i {
 .contact-info ul li {
   color: rgb(233, 233, 233);
   margin: 15px 0;
-  font-family: 'Roboto';
+  font-family: $primary-font;
   display: flex;
   align-items: center;
 
@@ -734,13 +796,14 @@ i {
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.3s ease;
+  font-family: $primary-font!important;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: white !important;
   opacity: 0.3 !important;
-  font-family: 'Roboto';
+  font-family: $primary-font;
 
 }
 
