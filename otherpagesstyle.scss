@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+// Colors
+$text-color: #f5f5f5;
+$primary-color: #288569;
+$secondary-color: #FF6347;
+$bg-color: #212121;
+$secondary-bg-color: #0A0909;
+
+// Fonts
+$primary-font: 'Roboto Slab', 'sans-serif';
+$secondary-font: 'Roboto Regular', 'sans-serif';
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: $text-color;
+    background: $bg-color;
+    font-family: 'Roboto';
+    overflow-x: hidden;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: $primary-color;
+}
+
+.content-section {
+    width: 40%;
+}
+
+.content-section2 {
+    width: 80%;
+}
+
+.less-space {
+    line-height: 90%;
+    margin-left: 1.2em;
+}
