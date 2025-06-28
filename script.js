@@ -350,7 +350,7 @@ document.querySelectorAll('.project-card').forEach(card => {
         ],
         statusNote: "",
         githubLink: "https://github.com/Khizra-Fatima/Blog_Application",
-        livedemolink: "https://github.com/user/project1"
+        livedemolink: "http://13.60.113.212/blog/"
       },
       2: {
         title: "Ecommerce-Platform – A Scalable Multi-Vendor E-commerce Platform",
@@ -449,7 +449,7 @@ document.querySelectorAll('.project-card').forEach(card => {
         ],
         statusNote: "",
         githubLink: "https://github.com/Khizra-Fatima/Ecommerce_Platform",
-        livedemolink: "https://github.com/user/project1"
+        livedemolink: "http://13.60.113.212/"
       },
       3: {
         title: "Connectly – A Social Media App (In Development)",
