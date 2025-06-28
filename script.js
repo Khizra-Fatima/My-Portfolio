@@ -332,21 +332,21 @@ document.querySelectorAll('.project-card').forEach(card => {
     const projectDetails = {
       1: {
         title: "MeBlog – A Multi-User Blogging Platform",
-        description: "MeBlog is a Django-powered blogging application that supports user-authored content, robust CRUD functionality, interactive comments, and category-based post organization. With Django Guardian for fine-grained permissions and Summernote for rich-text editing, the platform ensures both flexibility for writers and an intuitive reading experience. The application combines solid backend logic with clean layout.",
+        description: "MeBlog is a Django-powered blogging application that supports user-authored content, robust CRUD functionality, interactive comments. With Django Guardian for fine-grained permissions and Summernote for rich-text editing, the platform ensures both flexibility for writers and an intuitive reading experience. The application combines solid backend logic with clean layout.",
         image: "Images/image1.jpg",
         features: [
           "Implemented full user authentication system (register, login, logout)",
           "Built CRUD operations for posts with user-specific permissions",
-          "Enabled rich-text editing using Summernote and content sanitization with Bleach",
+          "Enabled rich-text editing using Summernote",
           "Developed a comment system with edit/delete rights for users",
           "Added likes/dislikes functionality for engagement",
-          "Designed a clean layout using SASS and no mobile-friendliness",
-          "Managed static files and media uploads (Pillow)",
+          "Designed a clean layout using SASS and (no mobile-friendliness)",
+          "Managed static files and media uploads",
         ],
         techstack: [
-          "Backend: Django, Django Guardian, Django Summernote, SQLite, Pillow",
+          "Backend: Django, Django Guardian, Django Summernote, SQLite",
           "Frontend: HTML, SASS (CSS preprocessor), Bootstrap, JavaScript",
-          "Other Tools: Bleach (for content sanitization), Git, GitHub"
+          "Other Tools: Git, GitHub"
         ],
         statusNote: "",
         githubLink: "https://github.com/Khizra-Fatima/Blog_Application",
@@ -354,7 +354,7 @@ document.querySelectorAll('.project-card').forEach(card => {
       },
       2: {
         title: "Ecommerce-Platform – A Scalable Multi-Vendor E-commerce Platform",
-        description: "A multi-vendor E-commerce platform built with Django. It offers distinct dashboards for administrator, sellers, and customers, facilitating efficient management of products, orders, and user interactions. The platform supports role-based access, social authentication, and integrates essential tools like Stripe (working on it) for payments and Django Guardian for fine-grained permissions. With a responsive design and modular architecture, Ecommerce-Platform ensures scalability and a user-friendly experience.",
+        description: "A multi-vendor E-commerce platform built with Django. It offers distinct dashboards for Co-admin, sellers, and customers, facilitating efficient management of products, orders, and user interactions. The platform supports role-based access, social authentication (Facebook), and integrates essential tools like Stripe (working on it) for payments and Django Guardian for fine-grained permissions. Ecommerce-Platform ensures scalability and a user-friendly experience.",
         image: "Images/image2.jpg",
         features: [
           {
@@ -414,7 +414,7 @@ document.querySelectorAll('.project-card').forEach(card => {
             title: "📌 Activities (Wishlist, Messaging & Notifications)",
             items: [
               "Wishlist: Save products to personal wishlist and manage from dashboard.",
-              "Notifications system: (In progress) All functionality is done except mark-as-read functionality.",
+              "Notifications system: Implemented a notification system where users must click the notification bell and then a specific notification to mark it as read, ensuring accurate badge count.",
               "Messaging System: One-way initiation by customers, inbox view, threaded messages, WebSocket integration planned."
             ]
           },
@@ -445,7 +445,7 @@ document.querySelectorAll('.project-card').forEach(card => {
         techstack: [
           "Backend: Python, Django, Django REST Framework, Django Guardian (object-level permissions), SQLite, Social Auth (Facebook login), Whitenoise (static file management)",
           "Frontend: HTML, SASS (CSS preprocessor), Bootstrap, JavaScript",
-          "Other Tools: Pillow (image handling), Crispy Forms (form rendering), Bleach (content sanitization), Git, GitHub"
+          "Other Tools: Git, GitHub"
         ],
         statusNote: "",
         githubLink: "https://github.com/Khizra-Fatima/Ecommerce_Platform",
