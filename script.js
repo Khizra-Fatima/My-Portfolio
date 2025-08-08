@@ -3,7 +3,7 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext('2d');
 
 // Define the color for the animation
-const animationColor = '#288569'; // Change this to your desired color
+const animationColor = '#288569';
 
 // for intro motion
 let mouseMoved = false;
@@ -72,8 +72,8 @@ function update(t) {
   });
 
   ctx.lineCap = "round";
-  ctx.strokeStyle = animationColor; // Set the color for the animation
-  ctx.lineWidth = 2; // Adjust line width if needed
+  ctx.strokeStyle = animationColor; 
+  ctx.lineWidth = 2; 
 
   ctx.beginPath();
   ctx.moveTo(trail[0].x, trail[0].y);
@@ -129,7 +129,6 @@ document.querySelectorAll('.clipped-border').forEach(hexagon => {
   hexagon.addEventListener('click', function () {
     const skillContent = document.getElementById('content');
 
-    // Get the clicked skill
     const skill = this.getAttribute('data-skill');
 
     // Define the details for each skill
@@ -240,21 +239,24 @@ document.querySelectorAll('.clipped-border').forEach(hexagon => {
       },
     };
 
-    // Slide out the current content if already active
     skillContent.classList.remove('slide-in');
 
-    // Use timeout to ensure smooth transition
     setTimeout(() => {
-      // Update the content area with the new skill title and description
       skillContent.innerHTML = `
             <h3>${skillDetails[skill].title}</h3>
             <p>${skillDetails[skill].description}</p>
         `;
 
-      // Slide the content back in
       skillContent.classList.add('slide-in');
-    }, 300); // Timeout matches the CSS transition duration
+    }, 300);
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultHexagon = document.querySelector('[data-skill="django"]');
+  if (defaultHexagon) {
+    defaultHexagon.click();
+  }
 });
 
 
@@ -525,4 +527,11 @@ document.querySelectorAll('.project-card').forEach(card => {
     projectDetail.classList.add('show-detail');
     projectDetail.scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultProject = document.querySelector('[data-project="2"]');
+  if (defaultProject) {
+    defaultProject.click();
+  }
 });
