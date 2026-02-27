@@ -351,8 +351,8 @@ document.querySelectorAll('.project-card').forEach(card => {
           "Other Tools: Git, GitHub"
         ],
         statusNote: "",
-        githubLink: "https://github.com/Khizra-Fatima/Blog_Application",
-        livedemolink: "http://13.60.113.212/blog/"
+        githubLink: "",
+        livedemolink: ""
       },
       2: {
         title: "Ecommerce-Platform – A Scalable Multi-Vendor E-commerce Platform",
@@ -450,8 +450,8 @@ document.querySelectorAll('.project-card').forEach(card => {
           "Other Tools: Git, GitHub"
         ],
         statusNote: "",
-        githubLink: "https://github.com/Khizra-Fatima/Ecommerce_Platform",
-        livedemolink: "http://13.60.113.212/"
+        githubLink: "",
+        livedemolink: ""
       },
       3: {
         title: "Connectly – A Social Media App (In Development)",
@@ -473,7 +473,7 @@ document.querySelectorAll('.project-card').forEach(card => {
           "Tools: Git, GitHub, Celery, Redis, Cloudinary (for media uploads)"
         ],
         statusNote: "🚧 Currently under active development.",
-        githubLink: "https://github.com/Khizra-Fatima/Connectly.git",
+        githubLink: "",
         livedemolink: "Coming Soon"
       }
     };
